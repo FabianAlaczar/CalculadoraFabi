@@ -24,8 +24,8 @@
             <div class="button-group">
                 <button type="submit" name="operacion" value="sumar">Sumar</button>
                 <button type="submit" name="operacion" value="restar">Restar</button>
-                <!-- <button type="submit" name="operacion" value="multiplicar">Multiplicar</button>
-                <button type="submit" name="operacion" value="dividir">Dividir</button> -->
+                <button type="submit" name="operacion" value="multiplicar">Multiplicar</button>
+                <button type="submit" name="operacion" value="dividir">Dividir</button>
             </div>
         </form>
 
@@ -58,14 +58,14 @@
                         $resultado = $valor1 + $valor2;
                     } elseif ($operacion == "restar") {
                         $resultado = $valor1 - $valor2;
-                    // } elseif ($operacion == "multiplicar") {
-                    //     $resultado = $valor1 * $valor2;
-                    // } elseif ($operacion == "dividir") {
-                    //     if ($valor2 != 0) {
-                    //         $resultado = $valor1 / $valor2;
-                    //     } else {
-                    //         $errores[] = "No se puede dividir por cero.";
-                    //     }
+                    } elseif ($operacion == "multiplicar") {
+                        $resultado = $valor1 * $valor2;
+                    } elseif ($operacion == "dividir") {
+                        if ($valor2 != 0) {
+                            $resultado = $valor1 / $valor2;
+                        } else {
+                            $errores[] = "No se puede dividir por cero.";
+                        }
                     }
                 } catch (Exception $e) {
                     echo "<div class='error'>Se ha producido un error: " . htmlspecialchars($e->getMessage()) . "</div>";
