@@ -10,6 +10,7 @@
     <div class="container">
         <header>
             <h1>Operaciones Básicas</h1>
+            <h2>Hola mundo</h2>
             <h3>José Fabián Alcázar Ramírez - 9A DyGS</h3>
         </header>
         <form method="POST">
